@@ -1,42 +1,43 @@
 def letter_grade(percentage)
 
-if percentage    = 95
-return "A+"
+if percentage    >= 95
+return "A+ :)"
 
-elsif percentage = 90
+elsif percentage >= 90
 return "A-"
 
-elsif percentage = 85
+elsif percentage >= 85
 return "B+"
 
-elsif percentage = 80
+elsif percentage >= 80
 return "B-"
 
-elsif percentage = 75
-return "C+"
+elsif percentage >= 75
+return "C+ :}"
 
-elsif percentage = 70
+elsif percentage >= 70
 return "C-"
 
-elsif percentage = 65
+elsif percentage >= 65
 return "D+"
 
-elsif percentage = 60
+elsif percentage >= 60
 return "D-"
 
 
-elsif percentage = 55
+elsif percentage >= 55
 return "E+"
 
-elsif percentage = 50
+elsif percentage >= 50
 return "E-"
 
 else
-return "F"
+return "F :( "
 
 end
 end
-puts "Please enter your grade to convert into a letter grade."
+puts "Please enter your grade to convert into a letter!"
+
 input_grade = gets.to_i
 
-puts "#{input_grade}% is an #{letter_grade(pgrade)!}"
+puts "#{input_grade}% is an #{letter_grade(input_grade)}"
