@@ -30,9 +30,13 @@ return "E+"
 
 elsif percentage = 50
 return "E-"
-  
+
 else
 return "F"
 
 end
 end
+puts "Please enter your grade to convert into a letter grade."
+input_grade = gets.to_i
+
+puts "#{input_grade}% is an #{letter_grade(pgrade)!}"
